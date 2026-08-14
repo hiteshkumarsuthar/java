@@ -1,3 +1,4 @@
+// Basic Program
 public class DataTypes {
     static void main() {
 
