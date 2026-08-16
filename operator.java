@@ -81,8 +81,6 @@ public class Main {
         System.out.println(postFix);
         System.out.println(activeUser);
 
-        
-
     }
 }
 
