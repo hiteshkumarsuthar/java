@@ -97,17 +97,17 @@
 
 
 // Pattern-8
-public class Main {
-    public static void main(String[] args) {
-        int n = 5;
-        for(int row = 1; row <= n; row++) {
-            for(int col = 1; col <= row - 1; col++) {
-                System.out.print("  ");
-            }
-            for(int col = 1; col <= n * 2 - (row * 2 - 1); col++) {
-                System.out.print("* ");
-            }
-            System.out.println();
-        }
-    }
-}
+// public class Main {
+//     public static void main(String[] args) {
+//         int n = 5;
+//         for(int row = 1; row <= n; row++) {
+//             for(int col = 1; col <= row - 1; col++) {
+//                 System.out.print("  ");
+//             }
+//             for(int col = 1; col <= n * 2 - (row * 2 - 1); col++) {
+//                 System.out.print("* ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
