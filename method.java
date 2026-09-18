@@ -17,15 +17,38 @@
 
 
 // Non-void method
+// public class methods {
+//     static int add(int p, int q) {
+//         int sum = p + q;
+//         return sum;
+//     }
+
+//     static void main() {
+//         int result = add(12, 13);
+//         System.out.println("SUM is -> " + result);
+//     }
+// }
+
+
+// Method overloading example
 public class methods {
-    static int add(int p, int q) {
-        int sum = p + q;
+    static int add(int a, int b) {
+        int sum = a + b;
         return sum;
     }
 
+    static int add(int a, int b, int c) {
+        int ans = a + b + c;
+        return ans;
+    }
+
     static void main() {
-        int result = add(12, 13);
-        System.out.println("SUM is -> " + result);
+        int ans1 = add(1, 2);
+        int ans2 = add(1, 2, 3);
+
+        System.out.println("ans1 = " + ans1);
+        System.out.println("ans2 = " + ans2);
     }
 }
+
 
