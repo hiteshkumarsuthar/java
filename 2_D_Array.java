@@ -120,25 +120,174 @@
 
 
 // ----INPUT/OUTPUT IN 2-D ARRAY----
-import java.util.Scanner;
-public class Array {
-    static void main() {
-        int arr[][] = new int[3][4];
-        Scanner sc = new Scanner(System.in);
+// import java.util.Scanner;
+// public class Array {
+//     static void main() {
+//         int arr[][] = new int[3][4];
+//         Scanner sc = new Scanner(System.in);
 
-        for(int i = 0; i <= arr.length-1; i++) {
-            for(int j = 0; j <= arr.length-1; j++) {
-                System.out.println("Provide value for row = " + i + "and column=" + j);
-                arr[i][j] = sc.nextInt();
-            }
-        }
+//         for(int i = 0; i <= arr.length-1; i++) {
+//             for(int j = 0; j <= arr.length-1; j++) {
+//                 System.out.println("Provide value for row = " + i + "and column=" + j);
+//                 arr[i][j] = sc.nextInt();
+//             }
+//         }
 
-        for(int rowindex = 0; rowindex <= arr.length-1; rowindex++) {
-            for(int colindex = 0; colindex <= arr[rowindex].length-1; colindex++) {
-                System.out.print(arr[rowindex][colindex] + " ");
-            }
-            System.out.println();
-        }
-    }
-}
+//         for(int rowindex = 0; rowindex <= arr.length-1; rowindex++) {
+//             for(int colindex = 0; colindex <= arr[rowindex].length-1; colindex++) {
+//                 System.out.print(arr[rowindex][colindex] + " ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+
+// ----Practice-Que.----
+
+// 2-D Sum Array
+
+// public class Array {
+//     static void main() {
+
+//         int arr[][] = {{1,2,3}, {4,5,6}};
+//         int sum = 0;
+
+//         for(int i = 0; i < arr.length; i++) {
+//             for(int j = 0; j < arr[i].length; j++) {
+//                 int value = arr[i][j];
+//                 sum = sum + value;
+//             }
+//         }
+//         System.out.println("Sum is : " + sum);
+//     }
+// }
+
+
+// 2-D Multiply Array
+
+// public class Array {
+//     static void main() {
+
+//         int arr[][] = {{1,2,3}, {1,2,3}};
+//         int ans = 1;
+
+//         for(int i = 0; i < arr.length; i++) {
+//             for(int j = 0; j < arr[i].length; j++) {
+//                 int value = arr[i][j];
+//                 ans = ans * value;
+//             }
+//         }
+//         System.out.println("Answer is : " + ans);
+//     }
+// }
+
+
+
+// 2-D Array Maximum value
+// public class Array {
+//     static void main() {
+
+//         int arr[][] = {{1,2,34}, {90, 78, 98}};
+//         int maxValue = arr[0][0];
+
+//         for(int i = 0; i < arr.length; i++) {
+//             for(int j = 0; j < arr[i].length; j++) {
+//                 if(arr[i][j] > maxValue) {
+//                     maxValue = arr[i][j];
+//                 }
+//             }
+//         }
+//         System.out.println("Maximum value is : " + maxValue);
+//     }
+// }
+
+
+
+// 2-D Array Minimum value
+// public class Array {
+//     public void main() {
+
+//         int arr[][] = {{1, 23, 21}, {89, 2, -9}};
+//         int minValue = arr[0][0];
+
+//         for(int i = 0; i < arr.length; i++) {
+//             for(int j = 0; j < arr[i].length; j++) {
+//                 if(arr[i][j] < minValue) {
+//                     minValue = arr[i][j];
+//                 }
+//             }
+//         }
+//         System.out.println("Minimum Value is : " + minValue);
+//     }
+// }
+
+
+// 2-D Diagonal Array
+
+// public class Array {
+//     static void main() {
+
+//         int arr[][] = {
+//             {1,2,3},
+//             {4,5,6},
+//             {7,8,9},
+//         };
+//         for(int i = 0; i < arr.length; i++) {
+//             for(int j = 0; j < arr[i].length; j++) {
+//                 if(i == j) {
+//                     System.out.println(arr[i][j] + " ");
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+// 2-D Diagonal Sum Array
+// public class Array {
+//     static void main() {
+
+//         int arr[][] = {
+//             {1,2,3},
+//             {4,5,6},
+//             {7,8,9},
+//         };
+//         int sum = 0;
+
+//         for(int i = 0; i < arr.length; i++) {
+//             for(int j = 0; j < arr[i].length; j++) {
+//                 if(i < j) {
+//                     sum = sum + arr[i][j];
+//                 }
+//             }
+//         }
+//         System.out.println("Sum is : " + sum);
+//     }
+// }
+
+
+// 2-D Array Search Element in Matrix
+
+// public class Array {
+//     static void main() {
+
+//         int arr[][] = {
+//             {1,2,3},
+//             {4,5,6},
+//             {7,8,9},
+//         };
+//         int target = 5;
+
+//         for(int i = 0; i < arr.length; i++) {
+//             for(int j = 0; j < arr[i].length; j++) {
+//                 if(arr[i][j] == target) {
+//                     System.out.println("Element found : " + arr[i][j]);
+//                 }
+//             }
+//         }
+//     }
+// }
+
 
