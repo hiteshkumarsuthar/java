@@ -175,3 +175,19 @@
 // }
 
 
+// 1-D Array target find
+public class Array {
+    static void main() {
+
+        int arr[] = {23, 54, 67, 89, 34};
+        int target = 89;
+        int n = arr.length;
+
+        for(int i = 0; i <= n-1; i++) {
+            if(arr[i] == target) {
+                System.out.println("Element found : " + arr[i]);
+                System.out.println("Index found : " + i);
+            }
+        }
+    }
+}
