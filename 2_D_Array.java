@@ -291,3 +291,32 @@
 // }
 
 
+
+public class Array {
+    static void main() {
+
+        int arr[][] = {
+            {1,2,3},
+            {2,4,5},
+            {3,5,6},
+        };
+        boolean symmetric = true;
+
+        for(int i = 0; i < arr.length; i++) {
+            for(int j = 0; j < arr[i].length; j++) {
+                if(arr[i][j] != arr[j][i]) {
+                    symmetric = false;
+                    break;
+                }
+            }
+            if(!symmetric) {
+                break;
+            }
+        }
+        if(symmetric) {
+            System.out.println("Array is Symmetric");
+        } else {
+            System.out.println("Array is not Symmetric");
+    }
+}
+}
