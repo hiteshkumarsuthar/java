@@ -72,85 +72,185 @@
 
 
 
-
-public class StringBasic {
-    static void main() {
+// ----Methods----
+// public class StringBasic {
+//     static void main() {
         
-        // Methods
-
-        //=>lenght(), charAt(), equals(), equalsIgnoreCase()
-        String name = "Hitesh";
-        System.out.println(name.length());
-        System.out.println(name.charAt(0));
-        String name2 = "HITESH";
-        System.out.println(name.equals(name2));
-        System.out.println(name.equalsIgnoreCase(name2));
+//         //=>lenght(), charAt(), equals(), equalsIgnoreCase()
+//         String name = "Hitesh";
+//         System.out.println(name.length());
+//         System.out.println(name.charAt(0));
+//         String name2 = "HITESH";
+//         System.out.println(name.equals(name2));
+//         System.out.println(name.equalsIgnoreCase(name2));
 
         
-        //=>isEmpty(), isBlank()
-        String str = " ";
-        System.out.println(str.length());
-        System.out.println(str.isEmpty());
-        System.out.println(str.isBlank());
+//         //=>isEmpty(), isBlank()
+//         String str = " ";
+//         System.out.println(str.length());
+//         System.out.println(str.isEmpty());
+//         System.out.println(str.isBlank());
 
 
-        //=> trim()
-        String str1 = "   Hitesh   ";
-        System.out.println(str1.length());
-        str = str1.trim();
-        System.out.println(str.length());
+//         //=> trim()
+//         String str1 = "   Hitesh   ";
+//         System.out.println(str1.length());
+//         str = str1.trim();
+//         System.out.println(str.length());
 
 
-        //=> toUpperCase(), toLowerCase()
-        String name = "Hitesh";
-        System.out.println(name.toUpperCase());
-        System.out.println(name.toLowerCase());
+//         //=> toUpperCase(), toLowerCase()
+//         String name = "Hitesh";
+//         System.out.println(name.toUpperCase());
+//         System.out.println(name.toLowerCase());
 
 
-        //=> substring(), contains()
-        String str = "My name is Hitesh";
-        // // beginIndex -> 3 -> inclusive
-        // // endIndex -> 7 -> exclusive
-        System.out.println(str.substring(3, 7));
-        System.out.println(str.contains("Hitesh"));
+//         //=> substring(), contains()
+//         String str = "My name is Hitesh";
+//         // // beginIndex -> 3 -> inclusive
+//         // // endIndex -> 7 -> exclusive
+//         System.out.println(str.substring(3, 7));
+//         System.out.println(str.contains("Hitesh"));
 
 
-        //=> valueOf()
-        int num = 21051;
-        String str = String.valueOf(num);
-        System.out.println(num+1);
-        System.out.println(str+1);
+//         //=> valueOf()
+//         int num = 21051;
+//         String str = String.valueOf(num);
+//         System.out.println(num+1);
+//         System.out.println(str+1);
 
 
-        //=> startWith(), endsWith()
-        String name = "Hitesh Kumar Suthar";
-        System.out.println(name.startsWith("Hitesh"));
-        System.out.println(name.endsWith("Suthar"));
+//         //=> startWith(), endsWith()
+//         String name = "Hitesh Kumar Suthar";
+//         System.out.println(name.startsWith("Hitesh"));
+//         System.out.println(name.endsWith("Suthar"));
 
 
-        //=> toCharArray()
-        String name = "Hitesh";
-        char[] cr = name.toCharArray();
+//         //=> toCharArray()
+//         String name = "Hitesh";
+//         char[] cr = name.toCharArray();
 
-        for(char ch: cr) {
-            System.out.println("Value of char : " + ch);
-        }
+//         for(char ch: cr) {
+//             System.out.println("Value of char : " + ch);
+//         }
 
          
-        //=> split()
-        // //  split -> output -> string array
-        String input = "My,name,is,Hitesh,Kumar,Suthar";
-        String[] words = input.split(",");
-        for(String str: words) {
-            System.out.println(str);
+//         //=> split()
+//         // //  split -> output -> string array
+//         String input = "My,name,is,Hitesh,Kumar,Suthar";
+//         String[] words = input.split(",");
+//         for(String str: words) {
+//             System.out.println(str);
+//         }
+
+
+//         //=> replace()
+//         String name = "Hitesh";
+//         name = name.replace('H', 'R');
+//         System.out.println(name);
+
+
+//     }
+// }
+
+
+// Practice-Que.
+// Q-1
+// public class StringBasic {
+//     static void printString(String str) {
+//         int n = str.length();
+
+//         for(int i = 0; i < n; i++) {
+//             char ch = str.charAt(i);
+//             System.out.println(ch);
+//         }
+//     }
+
+
+//     // print length using function(method)
+//     static int getLengthOfString(String str) {
+//         char[] arr = str.toCharArray();
+//         int len = arr.length;
+//         return len;
+//     }
+
+
+//     // Print Vowels in string
+//     static int getVowelsCount(String str) {
+//         int count = 0;
+//         for(int i = 0; i < str.length(); i++) {
+//             char ch = str.charAt(i);
+//             if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+//                 count++;
+//             }
+//         }
+//         return count;
+//     }
+
+//     // Reverse String
+//     static String reverseString(String str) {
+//         String reverse = "";
+//         int n = str.length();
+//         for(int i = n-1; i >= 0; i--) {
+//             char ch = str.charAt(i);
+//             reverse = reverse + ch;
+//         }
+//         return reverse;
+//     }
+
+//     static void main() {
+//         // String str = "HITESH";
+
+//         // call reverse string
+//         String str = "HITESH";
+//         System.out.println("Reverse string : " + reverseString(str));
+
+//         // call vowel
+//         System.out.println("Vowels total count is :  " + getVowelsCount(str));
+
+//         // call length
+//         System.out.println("Length is : " + getLengthOfString(str));
+
+//         // call string
+//         printString(str);
+//     }
+// }
+
+
+// Reverse-String
+// public class StringBasic {
+//     static String reverseString(String str) {
+//         String reverse = "";
+//         int n = str.length();
+//         for(int i = n-1; i >= 0; i--) {
+//             char ch = str.charAt(i);
+//             reverse = reverse + ch;
+//         }
+//         return reverse;
+//     }
+
+//     static void main() {
+//         String str = "Hitesh";
+//         System.out.println(reverseString(str));
+//     }
+// }
+
+
+
+// Q.-58
+class Solution {
+    public int lengthOfLastWord(String s) {
+        int i = s.length() - 1;
+        
+        while(i >= 0 && s.charAt(i) == ' ') {
+            i--;
         }
 
-
-        //=> replace()
-        String name = "Hitesh";
-        name = name.replace('H', 'R');
-        System.out.println(name);
-
-
+        int count = 0;
+        while(i >= 0 && s.charAt(i) != ' ') {
+            count++;
+            i--;
+        }
+        return count;
     }
 }
