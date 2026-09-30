@@ -71,6 +71,30 @@
 // }
 
 
+// String Builder
+public class StringBasic {
+    static void main() {
+        StringBuilder sb = new StringBuilder("My name is");
+        sb.append(" Hitesh");
+        System.out.println(sb);
+        sb.reverse();
+        System.out.println(sb);
+        sb.toString();
+        System.out.println(sb);
+        sb.delete(0, 3);
+        System.out.println(sb);
+        sb.insert(10, " : ");
+        System.out.println(sb);
+        sb.reverse();
+        System.out.println(sb);
+        sb.deleteCharAt(2);
+        System.out.println(sb);
+        sb.setCharAt(0, 'O');
+        System.out.println(sb);
+        System.out.println(sb.capacity());
+    }
+}
+
 
 // ----Methods----
 // public class StringBasic {
@@ -237,20 +261,57 @@
 
 
 
-// Q.-58
-class Solution {
-    public int lengthOfLastWord(String s) {
-        int i = s.length() - 1;
+// //Leetcode-Q.-58
+// class Solution {
+//     public int lengthOfLastWord(String s) {
+//         int i = s.length() - 1;
         
-        while(i >= 0 && s.charAt(i) == ' ') {
-            i--;
-        }
+//         while(i >= 0 && s.charAt(i) == ' ') {
+//             i--;
+//         }
 
-        int count = 0;
-        while(i >= 0 && s.charAt(i) != ' ') {
-            count++;
-            i--;
-        }
-        return count;
-    }
-}
+//         int count = 0;
+//         while(i >= 0 && s.charAt(i) != ' ') {
+//             count++;
+//             i--;
+//         }
+//         return count;
+//     }
+// }
+
+
+
+// Palindrome-String-Program
+
+// public class StringBasic {
+//     static String reverseString(String str) {
+//         String reverse = "";
+//         int n = str.length();
+//         for(int i=n-1; i>=0; i--) {
+//             char ch = str.charAt(i);
+//             reverse = reverse + ch;
+//         }
+//         return reverse;
+//     }
+
+//     static boolean isPalindrome(String str) {
+//         String original = str;
+//         String reverse = reverseString(original);
+
+//         for(int i=0; i < original.length(); i++) {
+//             char ch1 = original.charAt(i);
+//             char ch2 = reverse.charAt(i);
+//             if(ch1 != ch2) {
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+//     static void main() {
+//         String str = "NOON";
+//         System.out.println(str + " is Palindrome String? -> " + isPalindrome(str));
+//     }
+// }
+
+
+
