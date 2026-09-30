@@ -72,28 +72,28 @@
 
 
 // String Builder
-public class StringBasic {
-    static void main() {
-        StringBuilder sb = new StringBuilder("My name is");
-        sb.append(" Hitesh");
-        System.out.println(sb);
-        sb.reverse();
-        System.out.println(sb);
-        sb.toString();
-        System.out.println(sb);
-        sb.delete(0, 3);
-        System.out.println(sb);
-        sb.insert(10, " : ");
-        System.out.println(sb);
-        sb.reverse();
-        System.out.println(sb);
-        sb.deleteCharAt(2);
-        System.out.println(sb);
-        sb.setCharAt(0, 'O');
-        System.out.println(sb);
-        System.out.println(sb.capacity());
-    }
-}
+// public class StringBasic {
+//     static void main() {
+//         StringBuilder sb = new StringBuilder("My name is");
+//         sb.append(" Hitesh");
+//         System.out.println(sb);
+//         sb.reverse();
+//         System.out.println(sb);
+//         sb.toString();
+//         System.out.println(sb);
+//         sb.delete(0, 3);
+//         System.out.println(sb);
+//         sb.insert(10, " : ");
+//         System.out.println(sb);
+//         sb.reverse();
+//         System.out.println(sb);
+//         sb.deleteCharAt(2);
+//         System.out.println(sb);
+//         sb.setCharAt(0, 'O');
+//         System.out.println(sb);
+//         System.out.println(sb.capacity());
+//     }
+// }
 
 
 // ----Methods----
